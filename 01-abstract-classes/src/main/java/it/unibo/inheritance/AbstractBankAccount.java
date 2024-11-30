@@ -70,4 +70,8 @@ public abstract class AbstractBankAccount implements BankAccount {
             this.incrementTransactions();
         }
     }
+
+    protected abstract boolean isWithDrawAllowed(double amount);
+
+    protected abstract double computeFees();
 }
