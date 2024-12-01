@@ -7,4 +7,15 @@ public class ClassicBankAccount extends AbstractBankAccount {
     public ClassicBankAccount(final AccountHolder accountHolder, final double balance) {
         super(accountHolder, balance);
     }
+
+    @Override
+    protected boolean isWithDrawAllowed(double amount) {
+        return true;
+    }
+
+    @Override
+    protected double computeFees() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'computeFees'");
+    }
 }
