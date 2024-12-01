@@ -1,4 +1,4 @@
-package it.unibo.inheritance;
+package it.unibo.inheritance.impl;
 
 import it.unibo.inheritance.api.AccountHolder;
 import it.unibo.inheritance.api.BankAccount;

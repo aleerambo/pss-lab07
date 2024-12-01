@@ -1,6 +1,5 @@
 package it.unibo.inheritance.impl;
 
-import it.unibo.inheritance.AbstractBankAccount;
 import it.unibo.inheritance.api.AccountHolder;
 
 public class RestrictedBankAccount extends AbstractBankAccount {
