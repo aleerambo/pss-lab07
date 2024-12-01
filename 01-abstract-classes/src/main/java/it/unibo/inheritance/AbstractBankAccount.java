@@ -11,7 +11,7 @@ public abstract class AbstractBankAccount implements BankAccount {
     private double balance;
     private int transactions;
 
-    public AbstractBankAccount(AccountHolder accountHolder, double balance) {
+    public AbstractBankAccount(final AccountHolder accountHolder, final double balance) {
         this.holder = accountHolder;
         this.balance = balance;
         this.transactions = 0;
