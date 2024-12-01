@@ -15,7 +15,6 @@ public class ClassicBankAccount extends AbstractBankAccount {
 
     @Override
     protected double computeFees() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'computeFees'");
+        return MANAGEMENT_FEE;
     }
 }
