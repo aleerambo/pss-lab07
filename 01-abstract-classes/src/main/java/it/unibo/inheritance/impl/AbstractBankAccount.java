@@ -19,7 +19,7 @@ public abstract class AbstractBankAccount implements BankAccount {
 
     public void chargeManagementFees(int id) {
         if (checkUser(id)) {
-            this.balance -= AbstractBankAccount.MANAGEMENT_FEE;
+            this.balance -= this.computeFees();
             resetTransactions();
         }
     }
@@ -45,7 +45,9 @@ public abstract class AbstractBankAccount implements BankAccount {
     }
 
     public void withdraw(int id, double amount) {
-        this.transactionOp(id, -amount);
+        if(isWithDrawAllowed(amount)) {
+            this.transactionOp(id, -amount);
+        }
     }
 
     public void withdrawFromATM(int id, double amount) {
